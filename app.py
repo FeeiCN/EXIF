@@ -189,7 +189,12 @@ def read_exif(path):
             # Special Cover Value
             if key in ['GPS GPSLatitude', 'GPS GPSLongitude']:
                 tmp_v = str(t_value).replace('[', '').replace(']', '').split(', ')
-                t_value = cover_gps(tmp_v[0], tmp_v[1], float(int(tmp_v[2].split('/')[0]) / int(tmp_v[2].split('/')[1])))
+                for i in range(len(tmp_v)):
+                    if '/' in tmp_v[i]:
+                        tmp_v[i] = float(int(tmp_v[i].split('/')[0]) / int(tmp_v[i].split('/')[1]))
+                    else:
+                        tmp_v[i] = float(int(tmp_v[i]))
+                t_value = cover_gps(tmp_v[0], tmp_v[1], tmp_v[2])
                 data['other'][key.split(' ')[1]] = t_value
             if key in ['EXIF DateTimeOriginal', 'EXIF DateTimeDigitized', 'Image DateTime', 'GPS GPSDate']:
                 if ' ' in str(t_value):
