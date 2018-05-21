@@ -38,6 +38,11 @@ TRANSLATE_KEY = {
     'Image TileLength': '图片平铺长度',  # 512
     'Image ExifOffset': None,  # 204
     'Image Orientation': '图片方向',  # Horizontal (normal)
+    'Image ImageWidth': '图片宽度',  # 3662
+    'Image ImageLength': '图片高度',  # 2744
+    'Image BitsPerSample': '比特采样率',  # [8, 8, 8]
+    'Image PhotometricInterpretation': '图片光度表示',  # 2
+    'Image SamplesPerPixel': '图片采样像素数',  # 3
     'GPS GPSLatitudeRef': None,  # N
     'GPS GPSLatitude': 'GPS纬度(N)',  # [39, 16, 2259/50]
     'GPS GPSLongitudeRef': None,  # E
@@ -61,7 +66,7 @@ TRANSLATE_KEY = {
     'EXIF ExifVersion': 'EXIF版本',  # 0221
     'EXIF DateTimeOriginal': '原始时间',  # 2018:05:04 18:45:32
     'EXIF DateTimeDigitized': '数字时间',  # 2018:05:04 18:45:32
-    'EXIF ComponentsConfiguration': '组件peizhi ',  # YCbCr
+    'EXIF ComponentsConfiguration': '组件配置',  # YCbCr
     'EXIF ShutterSpeedValue': '快门速度',  # 3303/845
     'EXIF ApertureValue': '光圈',  # 2159/1273
     'EXIF BrightnessValue': '亮度',  # 3694/1557
@@ -84,14 +89,17 @@ TRANSLATE_KEY = {
     'EXIF LensSpecification': '镜头规格',  # [4, 6, 9/5, 12/5]
     'EXIF LensMake': '镜头制造',  # Apple
     'EXIF LensModel': '镜头模型',  # iPhone X back dual camera 4mm f/1.8
+    'EXIF ColorSpace': '颜色空间',  # Uncalibrated
 }
 
 TRANSLATE_VALUE = {
     'Auto': '自动',
     'Standard': '标准',
+    'Uncalibrated': '未标定',
     'Auto Exposure': '自动曝光',
     'Directly Photographed': '直接拍摄',
     'Program Normal': '程序正常',
+    'One-chip color area': '单片色区',
     'Flash did not fire, auto mode': '闪光灯未触发（自动模式）'
 }
 

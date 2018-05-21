@@ -6,13 +6,6 @@ body {
     background: #3b4760;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 ::selection {
     background: rgba(73, 96, 128, 0.55);
 }
@@ -147,6 +140,7 @@ body {
 }
 
 .user-desc {
+    display: grid;
     color: rgba(255, 255, 255, .7);
     font-size: 11pt;
     line-height: 12pt;
