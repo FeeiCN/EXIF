@@ -1,4 +1,4 @@
-# EXIF - EXIF Information Viewer(快速的读取照片中隐藏的各类信息)
+# EXIF - EXIF Information Viewer(读取照片中隐藏的各类信息)
 
 ![EXIF](http://feei.cn/images/exif_03.jpg)
 
